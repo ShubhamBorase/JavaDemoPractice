@@ -1,0 +1,26 @@
+
+
+import java.io.*;
+
+class User2D2{
+	public static void main(String...args)throws IOException{
+
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+
+		System.out.println("Enter The Elements Of Array");
+		int [][] arr=new int [2][2];
+
+		for (int i=0; i<2; i++){
+			for (int j=0; j<2; j++){
+				arr[i][j]=Integer.parseInt(br.readLine());
+			}
+		}
+
+		for (int i=0; i<2; i++){
+			for (int j=0; j<2; j++){
+				System.out.print(arr[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+}
