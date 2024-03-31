@@ -1,0 +1,31 @@
+
+import java.io.*;
+
+class AddSub1{
+	public static void main(String...args){
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		int in1 = 0;
+		int in2 = 0;
+
+		System.out.println("Give 2 Number as Input");
+
+		try{
+			in1 = Integer.parseInt(br.readLine());
+			in2 = Integer.parseInt(br.readLine());
+		}catch(IOException io){
+			System.out.println("Error");
+		}
+
+		System.out.println("Addition is "+(in1+in2));
+
+		if(in1>in2){
+			System.out.println("Substraction is "+(in1-in2));
+		}else if(in2>in1){
+			System.out.println("Substraction is "+(in2-in1));
+		}else{
+			System.out.println("Substraction is "+(in1-in2));
+		}
+	}
+}
